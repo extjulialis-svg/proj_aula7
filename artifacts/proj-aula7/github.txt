@@ -1,4 +1,2 @@
 URL do repositório GitHub:
-https://github.com/SEU_USUARIO/proj_aula7
-
-(Substitua SEU_USUARIO pelo seu usuário do GitHub antes de enviar)
+https://github.com/extjulialis-svg/proj_aula7
