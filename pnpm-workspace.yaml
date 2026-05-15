@@ -69,8 +69,10 @@ catalog:
 autoInstallPeers: false
 
 onlyBuiltDependencies:
+  - '@nestjs/core'
   - '@swc/core'
   - esbuild
+  - mongodb-memory-server
   - msw
   - unrs-resolver
 
