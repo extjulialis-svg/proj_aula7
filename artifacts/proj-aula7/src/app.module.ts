@@ -3,14 +3,14 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ExemploModule } from './exemplo/exemplo.module';
+import { PraticaModule } from './pratica/pratica.module';
 
 async function getMongoUri(): Promise<string> {
   if (process.env.MONGODB_URI) {
     console.log('Usando MongoDB Atlas (MONGODB_URI)');
     return process.env.MONGODB_URI;
   }
-  console.log('MONGODB_URI não definido — iniciando MongoDB em memória para testes...');
+  console.log('Iniciando MongoDB em memória para testes...');
   const mongod = await MongoMemoryServer.create();
   return mongod.getUri();
 }
@@ -22,7 +22,7 @@ async function getMongoUri(): Promise<string> {
         uri: await getMongoUri(),
       }),
     }),
-    ExemploModule,
+    PraticaModule,
   ],
   controllers: [AppController],
   providers: [AppService],

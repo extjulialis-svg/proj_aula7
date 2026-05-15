@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "hlZiD5cx-wazUbrbn0_MB"
+uri = "file://proj_aula7_entrega.zip"
+type = "unspecified"
+title = "proj_aula7_entrega.zip — Arquivo para entregar ao professor"
